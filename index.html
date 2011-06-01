@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+
+    <title>nautilus-py-vim Homepage</title>
+
+    <style type="text/css">
+      body {
+        margin-top: 1.0em;
+        background-color: #ffffff;
+        font-family: Helvetica, Arial, FreeSans, san-serif;
+        color: #000000;
+      }
+      #container {
+        margin: 0 auto;
+        width: 700px;
+      }
+      h1 { font-size: 3.8em; color: #000000; margin-bottom: 3px; }
+      h1 .small { font-size: 0.4em; }
+      h1 a { text-decoration: none }
+      h2 { font-size: 1.5em; color: #000000; }
+      h3 { text-align: center; color: #000000; }
+      a { color: #000000; }
+      .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
+      .download { float: right; }
+      pre { background: #000; color: #fff; padding: 15px;}
+      hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+      .footer { text-align:center; padding-top:30px; font-style: italic; }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+
+      <h1>
+        <a href="http://github.com/xuhdev/nautilus-py-vim">nautilus-py-vim</a><br>
+        <span class="small">by <a href="http://github.com/xuhdev">Hong Xu</a></span>
+      </h1>
+
+      <div class="description">
+        A nautilus python extension which adds several menu items to nautilus for gvim
+      </div>
+
+      <p>nautilus-py-vim is a nautilus extension written in python, which adds several<br>
+      menu items in the nautilus context menu for gvim, which would popup when right<br>
+      clicking on the file in nautilus file manager, just like gVim on Windows.<br>
+      </p>
+
+      <h2>Dependencies</h2>
+      <p>
+      <a href=http://www.vim.org>gvim</a><br>
+      <a href=http://projects.gnome.org/nautilus-python>nautilus-python</a><br>
+      <h2>Install</h2>
+      <p>To install this plugin, first make sure that you have installed the<br>
+      nautilus python extension(http://projects.gnome.org/nautilus-python):<br>
+      On Fedora:          # yum install nautilus-python<br>
+      On Debian/Ubuntu:   # apt-get install python-nautilus<br>
+      <br>
+      Then make the directory "~/.nautilus/python-extensions" if it doesn't exist:<br>
+      $ mkdir -p ~/.nautilus/python-extensions<br>
+      <br>
+      After that, extract the source tarball and copy the nautilusvim.py to<br>
+      ~/.nautilus/python-extensions:<br>
+      $ cp nautilusvim.py ~/.nautilus/python-extensions/<br>
+      <br>
+      Restart nautilus(execute "nautilus -q") and try to right click on the file(s)<br>
+      you want to edit, you will see the changes in the context menu("Edit with<br>
+      gVim" when only one file is selected, and "Diff with gVim", "Edit with Multi<br>
+      gVim", "Edit with a Single gVim" are present when several files are selected),<br>
+      just like what it is like on Windows.<br>
+      </p>
+      <h2>License</h2>
+      <p>GPL v2</p>
+      <h2>Author</h2>
+      <p>Hong Xu (<a href="mailto:Hong Xu<xuhdev@gmail.com>">xuhdev@gmail.com</a>)</p>
+
+      <h2>Download</h2>
+      <p>
+      The latest stable version is 0.1.
+      Click <a href="http://www.vim.org/scripts/download_script.php?src_id=15765">here</a>
+      to download the latest stable release.
+      </p>
+
+      <h2>Bug Report and Feature Request</h2>
+      <p>
+      If you find any bug or you have some good suggestions, please submit it on the
+      <a href=https://github.com/xuhdev/nautilus-py-vim/issues>issue tracker</a> or send an
+      email to me
+      (<a href="mailto:Hong Xu<xuhdev@gmail.com>">xuhdev@gmail.com</a>).
+      </p>
+
+      <h2>For Developers</h2>
+      <p>
+      This project is hosted with <a href=http://git-scm.org>git</a>, a distributed revision control system.
+      Click <a href=http://github.com/xuhdev/nautilus-py-vim>here</a> to visit the code repository page.
+      </p>
+
+      <div class="footer">
+      </div>
+
+    </div>
+
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+          var pageTracker = _gat._getTracker("UA-23682803-1");
+          pageTracker._trackPageview();
+          } catch(err) {}
+    </script>
+  </body>
+</html>
+
+<!-- vim: sw=2 ts=2
+-->
